@@ -1,0 +1,19 @@
+import java.io.*;
+class Factors
+{
+public static void main(String[] args)
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int num,i;
+
+System.out.println("Enter a number to find factors of it");
+num=Integer.parseInt(br.readLine());
+
+System.out.println("Factors of "+num+" are:");
+for(i=1;i<=num;i++)
+{
+if(num%i==0)
+System.out.println(i+" ");
+}
+}
+}
